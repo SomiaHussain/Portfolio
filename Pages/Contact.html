@@ -1,8 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <Main>
-        <h1>Contact Me</h1>
-    </Main>
-    <Body>
-        <h2>This is the Contact me page</h2>
-    </Body>
+<Main>
+    <h1>Contact Me</h1>
+</Main>
+
+<Body>
+    <h2>How to contact me.</h2>
+    <br />
+    <p>In order to contact me please provide details below and I will get hold of you as soon as possible.</p>
+    <br />
+    <form>
+        <fieldset>
+            <legend>Personal details</legend>
+
+            <label for="username">Username</label>
+            <input id="username" type="text">
+
+            <br>
+
+            <label for="email">Email</label>
+            <input id="email" type="text">
+
+            <br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Reason for contacting</legend>
+
+            <select name="Reason for contacting">
+                <option value="for extra information" selected>For extra information</option>
+                <option value="interest in project">Interest in project</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="notes">Other information</label>
+            <textarea id="notes"></textarea>
+
+            <br>
+
+        </fieldset>
+
+        <button type="submit">Submit details</button>
+    </form>
+</Body>
+
+</html>
